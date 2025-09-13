@@ -21,7 +21,7 @@ public class AdminOrderServlet extends HttpServlet {
         try (Connection conn = DBConnection.getConnection()) {
 
             if ("list".equals(action)) {
-                // Fetch all orders
+                
                 PreparedStatement ps = conn.prepareStatement(
                         "SELECT id, user_id, status, total, created_at FROM orders ORDER BY created_at DESC"
                 );
@@ -41,12 +41,12 @@ public class AdminOrderServlet extends HttpServlet {
                 rs.close();
                 ps.close();
 
-                // Send list to JSP
+                
                 request.setAttribute("orders", orders);
                 request.getRequestDispatcher("adminOrderList.jsp").forward(request, response);
 
             } else if ("updateStatus".equals(action)) {
-                // Update order status
+                
                 String orderIdStr = request.getParameter("orderId");
                 String status = request.getParameter("status");
 
@@ -61,7 +61,7 @@ public class AdminOrderServlet extends HttpServlet {
                     ps.close();
                 }
 
-                // Redirect to list
+                
                 response.sendRedirect(request.getContextPath() + "/AdminOrderServlet?action=list");
             }
 
@@ -71,3 +71,4 @@ public class AdminOrderServlet extends HttpServlet {
         }
     }
 }
+
