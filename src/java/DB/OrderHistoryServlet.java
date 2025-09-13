@@ -18,7 +18,7 @@ public class OrderHistoryServlet extends HttpServlet {
         }
 
         try (Connection con = DBConnection.getConnection()) {
-            // TODO: Replace this with actual user_id lookup based on logged-in user
+            
             int userId = 1;
 
             PreparedStatement ps = con.prepareStatement(
@@ -34,3 +34,4 @@ public class OrderHistoryServlet extends HttpServlet {
         }
     }
 }
+
