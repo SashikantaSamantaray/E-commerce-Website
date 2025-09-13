@@ -62,13 +62,13 @@
             <div class="product-grid">
                 <c:forEach var="product" items="${products}">
                     <div class="product-card">
-                        <!-- ✅ Clickable Image -->
+                        
                         <a href="ProductDetailServlet?id=${product.id}">
                             <img src="${pageContext.request.contextPath}/images/${fn:replace(product.imageUrl, 'images/', '')}" 
                                  alt="${product.name}">
                         </a>
 
-                        <!-- ✅ Clickable Product Name -->
+                        
                         <h3>
                             <a href="ProductDetailServlet?id=${product.id}" style="text-decoration:none; color:#333;">
                                 ${product.name}
@@ -79,7 +79,7 @@
                         <p>${product.categoryName}</p>
                         <p><b>₹${product.price}</b></p>
 
-                        <!-- ✅ Add to Cart -->
+                        
                         <form action="CartServlet" method="post">
                             <input type="hidden" name="productId" value="${product.id}" />
                             <button type="submit" class="btn">Add to Cart</button>
