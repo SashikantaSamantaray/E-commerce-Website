@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/DBConnection.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/register.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/login.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/LoginServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/ProductListServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/products.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/CartServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/cart.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/checkout.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/CheckoutServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/orderSuccess.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/OrderHistoryServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/OrderHistory.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/AdminLoginServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminLogin.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminDashboard.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/AdminProductServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminProductList.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminProductForm.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/AdminOrderServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminOrderList.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/AdminUserServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/adminUserList.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/RegistrationServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/Product.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/ProductDetailServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/ProductDetail.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/index.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/CartItem.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/CSS/style.css</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/header.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/productcatalog.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/HomeServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/ProductDAO.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/OrderServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/OrderDAO.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/OrderListServlet.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/Orders.jsp</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/User.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/Order.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/src/java/DB/CategoryDAO.java</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/images/Laptop.jpg</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/images/chair.jpg</file>
+            <file>file:/C:/Users/91784/Documents/NetBeansProjects/ProjectWeb/web/images/coffeemug.jpg</file>
+        </group>
+    </open-files>
+</project-private>
