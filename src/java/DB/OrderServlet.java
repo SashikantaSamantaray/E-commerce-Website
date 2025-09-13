@@ -28,9 +28,9 @@ public class OrderServlet extends HttpServlet {
         }
 
         try (Connection conn = DBConnection.getConnection()) {
-            conn.setAutoCommit(false); // ✅ Transaction start
+            conn.setAutoCommit(false); 
 
-            // Insert into orders
+            
             String orderSql = "INSERT INTO orders (total, status) VALUES (?, 'Placed')";
             PreparedStatement psOrder = conn.prepareStatement(orderSql, Statement.RETURN_GENERATED_KEYS);
             psOrder.setDouble(1, total);
@@ -42,7 +42,7 @@ public class OrderServlet extends HttpServlet {
                 orderId = rs.getInt(1);
             }
 
-            // Insert order items
+            
             String itemSql = "INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (?, ?, ?, ?)";
             PreparedStatement psItem = conn.prepareStatement(itemSql);
             for (CartItem item : cart) {
@@ -54,12 +54,12 @@ public class OrderServlet extends HttpServlet {
             }
             psItem.executeBatch();
 
-            conn.commit(); // ✅ Transaction commit
+            conn.commit(); 
 
-            // Clear cart
+            
             session.removeAttribute("cart");
 
-            // Redirect to success page
+            
             response.sendRedirect("order_success.jsp?id=" + orderId);
 
         } catch (Exception e) {
@@ -70,3 +70,4 @@ public class OrderServlet extends HttpServlet {
         }
     }
 }
+
