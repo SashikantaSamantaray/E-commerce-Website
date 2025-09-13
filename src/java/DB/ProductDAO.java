@@ -5,7 +5,7 @@ import java.util.*;
 
 public class ProductDAO {
 
-    // ✅ Get all products
+    
     public List<Product> getAllProducts() {
         List<Product> products = new ArrayList<>();
 
@@ -34,7 +34,7 @@ public class ProductDAO {
         return products;
     }
 
-    // ✅ Get single product by ID
+    
     public Product getProductById(int id) {
         Product product = null;
 
@@ -66,3 +66,4 @@ public class ProductDAO {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
+
