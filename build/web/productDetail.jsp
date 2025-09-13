@@ -57,21 +57,21 @@
 </head>
 <body>
     <div class="product-container">
-        <!-- ✅ Product Image -->
+        
         <div>
             <img src="${pageContext.request.contextPath}/images/${fn:replace(product.imageUrl, 'images/', '')}" 
                  alt="${product.name}">
             
         </div>
         
-        <!-- ✅ Product Details -->
+        
         <div class="product-details">
             <h2>${product.name}</h2>
             <p><b>Category:</b> ${product.categoryName}</p>
             <p><b>Description:</b> ${product.description}</p>
             <p class="price">₹${product.price}</p>
 
-            <!-- ✅ Add to Cart -->
+            
             <form action="CartServlet" method="post">
                 <input type="hidden" name="productId" value="${product.id}" />
                 <button type="submit" class="btn">Add to Cart</button>
