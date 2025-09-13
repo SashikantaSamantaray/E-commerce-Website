@@ -15,13 +15,14 @@ public class ProductListServlet extends HttpServlet {
 
         ProductDAO productDAO = new ProductDAO();
 
-        // ✅ Get all products
+        
         List<Product> productList = productDAO.getAllProducts();
 
-        // ✅ Set in request scope
+        
         request.setAttribute("products", productList);
 
-        // ✅ Forward to JSP
+        
         request.getRequestDispatcher("products.jsp").forward(request, response);
     }
 }
+
