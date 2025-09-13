@@ -78,8 +78,6 @@
 
                         <p>${product.categoryName}</p>
                         <p><b>₹${product.price}</b></p>
-
-                        
                         <form action="CartServlet" method="post">
                             <input type="hidden" name="productId" value="${product.id}" />
                             <button type="submit" class="btn">Add to Cart</button>
