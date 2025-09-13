@@ -36,7 +36,7 @@
 </div>
 
 <script>
-// Bootstrap 5 form validation script
+
 (() => {
   'use strict'
   const forms = document.querySelectorAll('.needs-validation')
