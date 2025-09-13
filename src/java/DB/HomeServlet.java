@@ -14,13 +14,14 @@ public class HomeServlet extends HttpServlet {
 
         ProductDAO productDAO = new ProductDAO();
 
-        // ✅ Get only featured products
+        
         List<Product> featuredProducts = productDAO.getFeaturedProducts();
 
-        // ✅ Set attribute for JSP
+       
         request.setAttribute("products", featuredProducts);
 
-        // ✅ Forward to homepage (index.jsp)
+       
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }
+
