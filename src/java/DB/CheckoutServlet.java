@@ -30,14 +30,13 @@ public class CheckoutServlet extends HttpServlet {
         }
 
         try (Connection conn = DBConnection.getConnection()) {
-            conn.setAutoCommit(false); // Transaction start
+            conn.setAutoCommit(false); 
 
-            // Insert order
+            
             PreparedStatement psOrder = conn.prepareStatement(
                 "INSERT INTO orders (user_id, address, status, created_at) VALUES (?, ?, ?, NOW())",
                 Statement.RETURN_GENERATED_KEYS);
             
-            // For demo, assume user_id is 1; replace with actual user id lookup as needed
             psOrder.setInt(1, 1);
             psOrder.setString(2, address);
             psOrder.setString(3, "Placed");
@@ -59,7 +58,7 @@ public class CheckoutServlet extends HttpServlet {
                 int productId = entry.getKey();
                 int quantity = entry.getValue();
 
-                // Get price
+               
                 PreparedStatement psPrice = conn.prepareStatement("SELECT price FROM products WHERE id = ?");
                 psPrice.setInt(1, productId);
                 ResultSet rsPrice = psPrice.executeQuery();
@@ -74,11 +73,10 @@ public class CheckoutServlet extends HttpServlet {
                 psItem.setDouble(4, price);
                 psItem.executeUpdate();
 
-                // TODO: Update inventory if required
             }
 
-            conn.commit(); // Commit transaction
-            session.removeAttribute("cart"); // Clear cart
+            conn.commit(); 
+            session.removeAttribute("cart"); 
             response.sendRedirect("orderSuccess.jsp");
         } catch (Exception e) {
             e.printStackTrace();
@@ -93,3 +91,4 @@ public class CheckoutServlet extends HttpServlet {
         }
     }
 }
+
